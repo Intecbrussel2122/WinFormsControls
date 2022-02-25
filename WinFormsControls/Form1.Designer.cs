@@ -107,7 +107,7 @@ namespace WinFormsControls
             // btnFilterByCountry
             // 
             this.btnFilterByCountry.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilterByCountry.Location = new System.Drawing.Point(227, 621);
+            this.btnFilterByCountry.Location = new System.Drawing.Point(248, 622);
             this.btnFilterByCountry.Name = "btnFilterByCountry";
             this.btnFilterByCountry.Size = new System.Drawing.Size(123, 23);
             this.btnFilterByCountry.TabIndex = 7;
@@ -137,7 +137,7 @@ namespace WinFormsControls
             // btnFindPerson
             // 
             this.btnFindPerson.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFindPerson.Location = new System.Drawing.Point(422, 621);
+            this.btnFindPerson.Location = new System.Drawing.Point(450, 621);
             this.btnFindPerson.Name = "btnFindPerson";
             this.btnFindPerson.Size = new System.Drawing.Size(115, 23);
             this.btnFindPerson.TabIndex = 10;
