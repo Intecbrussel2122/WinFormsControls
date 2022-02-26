@@ -19,7 +19,7 @@ namespace WinFormsControls
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            IEnumerable<Person> allPeople = SeedPeople.GetPeople();
+            IEnumerable<Person> allPeople = SeedPeople.People;
 
             foreach (var item in allPeople)
             {
@@ -37,6 +37,7 @@ namespace WinFormsControls
             {
                 cmbCountry.Items.Add(item);
             };
+
 
         }
 
@@ -91,6 +92,7 @@ namespace WinFormsControls
         {
             lstDemo.Items.Clear();
             int selected = cmbCountry.SelectedIndex + 1;
+            //IEnumerable<Person> people = SeedPeople.People;
             IEnumerable<Person> people = SeedPeople.People;
             foreach (var person in people)
             {
