@@ -40,6 +40,7 @@ namespace WinFormsControls
             this.cmbCountry = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnFindPerson = new System.Windows.Forms.Button();
+            this.AddNewRecord = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstAllPeople
@@ -145,11 +146,22 @@ namespace WinFormsControls
             this.btnFindPerson.UseVisualStyleBackColor = true;
             this.btnFindPerson.Click += new System.EventHandler(this.btnFindPerson_Click);
             // 
+            // AddNewRecord
+            // 
+            this.AddNewRecord.Location = new System.Drawing.Point(619, 621);
+            this.AddNewRecord.Name = "AddNewRecord";
+            this.AddNewRecord.Size = new System.Drawing.Size(75, 23);
+            this.AddNewRecord.TabIndex = 11;
+            this.AddNewRecord.Text = "Add New Record";
+            this.AddNewRecord.UseVisualStyleBackColor = true;
+            this.AddNewRecord.Click += new System.EventHandler(this.AddNewRecord_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 679);
+            this.Controls.Add(this.AddNewRecord);
             this.Controls.Add(this.btnFindPerson);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbCountry);
@@ -182,6 +194,7 @@ namespace WinFormsControls
         private System.Windows.Forms.ComboBox cmbCountry;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnFindPerson;
+        private System.Windows.Forms.Button AddNewRecord;
     }
 }
 

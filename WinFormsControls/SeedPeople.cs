@@ -8,8 +8,8 @@ namespace WinFormsControls
 {
     public class SeedPeople
     {
+        private static List<Person> list;
 
-        static private List<Person> list;
         static public List<Person> People
         {
             get
@@ -27,13 +27,14 @@ namespace WinFormsControls
             var p4 = new Person() { Id = 4, FirstName = "Olga", LastName = "Kharchuk", Age = 24, IsVIP = true, Country = 1 };
             var p5 = new Person() { Id = 5, FirstName = "Serap", LastName = "AlBayrak", Age = 28, IsVIP = false, Country = 2 };
 
-            list.Add(p1);
-            list.Add(p2);
-            list.Add(p3);
-            list.Add(p4);
-            list.Add(p5);
+            list.Add(p1); list.Add(p2);list.Add(p3); list.Add(p4); list.Add(p5);
 
             return list;
+        }
+
+        static public void AddPerson(Person person)
+        {
+            list.Add(person);
         }
 
     }

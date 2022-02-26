@@ -90,6 +90,8 @@ namespace WinFormsControls
 
         private void cmbCountry_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+
             lstDemo.Items.Clear();
             int selected = cmbCountry.SelectedIndex + 1;
             //IEnumerable<Person> people = SeedPeople.People;
@@ -112,8 +114,33 @@ namespace WinFormsControls
 
         private void btnFindPerson_Click(object sender, EventArgs e)
         {
+            lstDemo.Items.Clear();
             var person = SeedPeople.People.Find(x => x.Id == (Convert.ToInt32(txtFilter.Text)));
             lstDemo.Items.Add(person);
+        }
+
+        private void AddNewRecord_Click(object sender, EventArgs e)
+        {
+
+            IEnumerable<Person> allPeople = SeedPeople.People;
+            Person p = new Person()
+            {
+                Id = 6,
+                FirstName = "Kenan",
+                LastName = "Kurda",
+                Age = 27,
+                IsVIP = false,
+                Country = 3
+            };
+
+            SeedPeople.AddPerson(p);
+
+            lstAllPeople.Items.Clear();
+            foreach (var item in allPeople)
+            {
+                lstAllPeople.Items.Add(item);
+            };
+
         }
     }
 }
